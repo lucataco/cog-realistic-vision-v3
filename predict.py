@@ -23,7 +23,7 @@ class Predictor(BasePredictor):
 
     def predict(
         self,
-        prompt: str = "RAW photo, a portrait photo of Katie Read in casual clothes, natural skin, 8k uhd, high quality, film grain, Fujifilm XT3",
+        prompt: str = "RAW photo, a portrait photo of a latina woman in casual clothes, natural skin, 8k uhd, high quality, film grain, Fujifilm XT3",
         negative_prompt: str = "(deformed iris, deformed pupils, semi-realistic, cgi, 3d, render, sketch, cartoon, drawing, anime, mutated hands and fingers:1.4), (deformed, distorted, disfigured:1.3), poorly drawn, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, disconnected limbs, mutation, mutated, ugly, disgusting, amputation",
         steps: int = Input(description=" num_inference_steps", ge=0, le=100, default=20),
         guidance: float = Input(description="Guidance scale (3.5 - 7)", default=5),
